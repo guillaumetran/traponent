@@ -22,7 +22,7 @@ export default class App extends React.Component {
           >
             <View style={{ width: 330, height: 125 }}>
               <TouchableCard
-                color="white"
+                color="red"
                 borderRadius={10}
                 shadow={true}
                 shadowColor="blue"

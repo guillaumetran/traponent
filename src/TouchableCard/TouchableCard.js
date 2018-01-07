@@ -88,7 +88,7 @@ export default class TouchableCard extends React.Component {
         style={[
           {
             flex: 1,
-            backgroundColor: "white",
+            backgroundColor: this.props.color,
             borderRadius: this.props.borderRadius
           },
           this.props.shadow ? { elevation: this.props.shadowRadius } : {},
