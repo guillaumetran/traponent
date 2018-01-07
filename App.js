@@ -1,13 +1,22 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+import Button from "./src/Button/Button";
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
+        <View style={{ width: 300, height: 100 }}>
+          <Button
+            borderRadius={40}
+            shadow={true}
+            shadowColor="#1F8AD3"
+            animation={true}
+            gradient={true}
+          >
+            <Text style={{ color: "white", fontSize: 18 }}>Valider</Text>
+          </Button>
+        </View>
       </View>
     );
   }
@@ -16,8 +25,8 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    backgroundColor: "#fff",
+    justifyContent: "center",
+    alignItems: "center"
+  }
 });
