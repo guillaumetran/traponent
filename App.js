@@ -1,21 +1,53 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import Button from "./src/Button/Button";
+import { StyleSheet, Text, View, ImageBackground } from "react-native";
+import TouchableCard from "./src/TouchableCard/TouchableCard";
+import { DangerZone } from "expo";
+const { Lottie } = DangerZone;
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={{ width: 300, height: 100 }}>
-          <Button
-            borderRadius={40}
+        <View style={{ width: 330, height: 125 }}>
+          <TouchableCard
+            color="white"
+            borderRadius={10}
             shadow={true}
-            shadowColor="#1F8AD3"
+            shadowColor="blue"
             animation={true}
             gradient={true}
+            onPress={() => {}}
           >
-            <Text style={{ color: "white", fontSize: 18 }}>Valider</Text>
-          </Button>
+            <View
+              style={{
+                flex: 1,
+                borderRadius: 10,
+                flexDirection: "row",
+                overflow: "hidden"
+              }}
+            >
+              <View
+                style={{
+                  flex: 2
+                }}
+              />
+              <ImageBackground
+                style={{
+                  flex: 1,
+                  height: "100%"
+                }}
+                source={require("./src/assets/BlueBar_3.png")}
+                resizeMode="cover"
+              >
+                <View
+                  style={{
+                    flex: 1,
+                    backgroundColor: "rgba(66, 117, 152, 0.4)"
+                  }}
+                />
+              </ImageBackground>
+            </View>
+          </TouchableCard>
         </View>
       </View>
     );
