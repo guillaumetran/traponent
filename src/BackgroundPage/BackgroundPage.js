@@ -16,7 +16,7 @@ export default class BackgroundPage extends React.Component {
   };
   render() {
     return (
-      <View style={{ flex: 1 }}>
+      <View style={[{ flex: 1 }, this.props.style]}>
         <View
           style={{
             height: "100%",
