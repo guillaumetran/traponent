@@ -110,9 +110,7 @@ export default class TouchableCard extends React.Component {
                   backgroundColor: "transparent",
                   borderColor: this.props.borderColor,
                   borderWidth: this.props.borderWidth,
-                  borderRadius: this.props.borderRadius,
-                  alignItems: "center",
-                  justifyContent: "center"
+                  borderRadius: this.props.borderRadius
                 },
                 this.props.shadow
                   ? {
@@ -138,9 +136,7 @@ export default class TouchableCard extends React.Component {
                   backgroundColor: this.props.color,
                   borderColor: this.props.borderColor,
                   borderWidth: this.props.borderWidth,
-                  borderRadius: this.props.borderRadius,
-                  alignItems: "center",
-                  justifyContent: "center"
+                  borderRadius: this.props.borderRadius
                 },
                 this.props.shadow
                   ? {
